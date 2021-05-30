@@ -1,0 +1,22 @@
+.Logo {
+    max-width: 189px;
+    height: 64px;
+    padding: 5px;
+}
+
+.fundo {
+    width: 100%;
+    height: 83px;
+    left: 0px;
+    top: 0px;
+    background: #BDBBBB;    
+}
+
+.itemMenu {
+    font-size: 30px;
+    padding: 5px;
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
