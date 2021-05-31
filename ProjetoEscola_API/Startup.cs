@@ -30,6 +30,7 @@ namespace ProjetoEscola_API
         {
             services.AddDbContext<EscolaContext>(x => x.UseMySQL("server=localhost;database=aluno;user=root"));
             services.AddControllers();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +42,8 @@ namespace ProjetoEscola_API
             }
 
             //app.UseHttpsRedirection();
+
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
 
